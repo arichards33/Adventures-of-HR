@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ODm-Ba-nYK">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="SJw-4O-Jpc">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="B1v-is-6tO" customClass="HomeViewController" customModule="Harper_Rose_Goes_To_The_Beach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fnk-Kj-Ay8">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OjN-fz-muK">
+                                <rect key="frame" x="0.0" y="67" width="834" height="1045"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdZ-4m-Jlg">
+                                <rect key="frame" x="16" y="525" width="200" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                <state key="normal" title="About The Author">
+                                    <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="aboutAuthor:" destination="B1v-is-6tO" eventType="touchUpInside" id="4ZG-w0-3gC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJd-6l-ksx">
+                                <rect key="frame" x="20" y="591" width="112" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                <state key="normal" title="Read">
+                                    <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="readBook:" destination="B1v-is-6tO" eventType="touchUpInside" id="ccz-fa-jv5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qH-nt-7Kx">
+                                <rect key="frame" x="16" y="674" width="116" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                <color key="tintColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Resume">
+                                    <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resumeReading:" destination="B1v-is-6tO" eventType="touchUpInside" id="a9E-2X-BbL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="f7F-rH-f65"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="W4u-Cj-kA3">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="Dj2-58-9BX">
+                            <connections>
+                                <segue destination="DkU-mv-Nor" kind="show" id="qxO-Km-4sA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="authorButton" destination="LdZ-4m-Jlg" id="ui7-97-qgB"/>
+                        <outlet property="backgroundImage" destination="OjN-fz-muK" id="gGG-6c-OtO"/>
+                        <outlet property="readButton" destination="EJd-6l-ksx" id="g6D-vx-PMx"/>
+                        <outlet property="resumeButton" destination="1qH-nt-7Kx" id="trN-MD-o6J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9T-08-5fq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015.1079136690648" y="207.73381294964028"/>
+        </scene>
+        <!--Book Root View Controller-->
+        <scene sceneID="V8K-b3-M01">
+            <objects>
+                <viewController storyboardIdentifier="BookRoot" id="9Ye-D2-XoF" customClass="BookRootViewController" customModule="Harper_Rose_Goes_To_The_Beach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rCm-A2-uKU">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KLN-Up-QKi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxG-Ve-KjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015" y="1442"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="ClK-OV-v4t">
+            <objects>
+                <viewController id="DkU-mv-Nor" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="si9-Jq-RAN">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="2EV-aq-nId">
+                                <rect key="frame" x="0.0" y="64" width="834" height="1048"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Auto Read To Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSY-eQ-vnF">
+                                <rect key="frame" x="70" y="475" width="249" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap To Read To Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeT-3x-09W">
+                                <rect key="frame" x="70" y="610" width="272" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jTt-Xw-nnc">
+                                <rect key="frame" x="361" y="630" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapAction:" destination="DkU-mv-Nor" eventType="valueChanged" id="Dkc-HZ-WPf"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KP3-wf-Nuc">
+                                <rect key="frame" x="361" y="492" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="readSwitch:" destination="DkU-mv-Nor" eventType="touchUpInside" id="lSE-3F-BrF"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56528764963150024" green="0.80967020988464355" blue="0.98976856470108032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2EV-aq-nId" secondAttribute="trailing" id="2KI-71-B81"/>
+                            <constraint firstAttribute="bottom" secondItem="2EV-aq-nId" secondAttribute="bottom" id="N22-K7-Bc7"/>
+                            <constraint firstItem="2EV-aq-nId" firstAttribute="top" secondItem="Xt2-L2-jq3" secondAttribute="top" id="Qsa-eZ-1Jh"/>
+                            <constraint firstItem="2EV-aq-nId" firstAttribute="leading" secondItem="Xt2-L2-jq3" secondAttribute="leading" id="hdv-wF-vr5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xt2-L2-jq3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="UwW-Hc-Smf"/>
+                    <connections>
+                        <outlet property="switchButton" destination="KP3-wf-Nuc" id="nrp-RD-RS9"/>
+                        <outlet property="tapReadLabel" destination="qeT-3x-09W" id="BBp-S2-9DY"/>
+                        <outlet property="tapSwitch" destination="jTt-Xw-nnc" id="4kv-8P-9LS"/>
+                        <outlet property="titleImage" destination="2EV-aq-nId" id="Eoe-c5-m5w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Djv-Vl-lzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881.294964028777" y="206.65467625899282"/>
+        </scene>
+        <!--Page1 View Controller-->
+        <scene sceneID="kZY-pY-ZNQ">
+            <objects>
+                <viewController storyboardIdentifier="Page1ViewController" id="KMD-J1-FUI" customClass="Page1ViewController" customModule="Harper_Rose_Goes_To_The_Beach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fZQ-rL-wOW">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountains" translatesAutoresizingMaskIntoConstraints="NO" id="d6j-AJ-Mci">
+                                <rect key="frame" x="0.0" y="126" width="834" height="633"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="633" id="P3y-yS-tIf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harper Rose was born in the mountains, and from a very early age she was going on hikes and enjoying the outdoors." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIg-Hv-W5P">
+                                <rect key="frame" x="20" y="805" width="794" height="163.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PF-tf-xXR">
+                                <rect key="frame" x="78" y="30" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="play-50"/>
+                                <connections>
+                                    <action selector="tapToRead:" destination="KMD-J1-FUI" eventType="touchUpInside" id="wst-h3-J22"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1O6-Xt-JIV">
+                                <rect key="frame" x="20" y="30" width="50" height="50"/>
+                                <state key="normal" image="home-50"/>
+                                <connections>
+                                    <segue destination="ODm-Ba-nYK" kind="show" id="52E-lA-7cm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78836172819137573" green="0.90820115804672241" blue="0.81333440542221069" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d6j-AJ-Mci" firstAttribute="centerX" secondItem="ZIg-Hv-W5P" secondAttribute="centerX" id="CYi-h9-cFF"/>
+                            <constraint firstItem="d6j-AJ-Mci" firstAttribute="top" secondItem="fZQ-rL-wOW" secondAttribute="top" constant="126" id="UOf-ce-lPN"/>
+                            <constraint firstItem="1O6-Xt-JIV" firstAttribute="leading" secondItem="ZIg-Hv-W5P" secondAttribute="leading" id="UiB-oB-Zqt"/>
+                            <constraint firstItem="d6j-AJ-Mci" firstAttribute="top" secondItem="1O6-Xt-JIV" secondAttribute="bottom" constant="46" id="ag7-aZ-r3j"/>
+                            <constraint firstItem="oqA-9x-l10" firstAttribute="trailing" secondItem="d6j-AJ-Mci" secondAttribute="trailing" id="gWT-7i-wBV"/>
+                            <constraint firstItem="d6j-AJ-Mci" firstAttribute="leading" secondItem="oqA-9x-l10" secondAttribute="leading" id="jnI-i7-1fU"/>
+                            <constraint firstItem="ZIg-Hv-W5P" firstAttribute="top" secondItem="d6j-AJ-Mci" secondAttribute="bottom" constant="46" id="nlw-bz-hVG"/>
+                            <constraint firstItem="1O6-Xt-JIV" firstAttribute="leading" secondItem="fZQ-rL-wOW" secondAttribute="leadingMargin" id="o2v-Tv-shg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oqA-9x-l10"/>
+                    </view>
+                    <connections>
+                        <outlet property="home1Button" destination="1O6-Xt-JIV" id="WnL-g6-F8T"/>
+                        <outlet property="page1Image" destination="d6j-AJ-Mci" id="zGo-yd-JYb"/>
+                        <outlet property="page1Text" destination="ZIg-Hv-W5P" id="aT7-Am-qMV"/>
+                        <outlet property="playButton" destination="3PF-tf-xXR" id="2eS-gH-U6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Lz-uv-RWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1136.6906474820144" y="2252.6978417266187"/>
+        </scene>
+        <!--Page2 View Controller-->
+        <scene sceneID="Dp6-vg-MNO">
+            <objects>
+                <viewController storyboardIdentifier="Page2ViewController" id="430-kA-B1C" customClass="Page2ViewController" customModule="Harper_Rose_Goes_To_The_Beach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbY-tS-4Hy">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41f-Kr-HC4">
+                                <rect key="frame" x="20" y="59" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kcf-iD-taF"/>
+                                </constraints>
+                                <state key="normal" image="home-50"/>
+                                <connections>
+                                    <segue destination="ODm-Ba-nYK" kind="show" id="qCu-Aw-TuO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="But what Harper Rose really dreamed of was going to the beach. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMG-3i-Mt9">
+                                <rect key="frame" x="16" y="117" width="798" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="syM-YY-QeC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page2" translatesAutoresizingMaskIntoConstraints="NO" id="thY-LQ-t1u">
+                                <rect key="frame" x="0.0" y="324" width="834" height="736"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="736" id="48E-BG-6Wa"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dL-Fa-yCT">
+                                <rect key="frame" x="78" y="59" width="50" height="50"/>
+                                <state key="normal" image="play-50"/>
+                                <connections>
+                                    <action selector="tapToRead:" destination="430-kA-B1C" eventType="touchUpInside" id="gJx-9v-rrc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42740470170974731" green="0.51538020372390747" blue="0.22780933976173401" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="thY-LQ-t1u" firstAttribute="top" secondItem="HMG-3i-Mt9" secondAttribute="bottom" constant="37" id="A77-QT-In2"/>
+                            <constraint firstItem="41f-Kr-HC4" firstAttribute="leading" secondItem="cbY-tS-4Hy" secondAttribute="leadingMargin" id="E1K-4r-q9w"/>
+                            <constraint firstItem="8dL-Fa-yCT" firstAttribute="leading" secondItem="41f-Kr-HC4" secondAttribute="trailing" constant="8" symbolic="YES" id="G7X-JJ-9RK"/>
+                            <constraint firstItem="HMG-3i-Mt9" firstAttribute="top" secondItem="41f-Kr-HC4" secondAttribute="bottom" constant="8" symbolic="YES" id="LIQ-uk-xgD"/>
+                            <constraint firstItem="thY-LQ-t1u" firstAttribute="leading" secondItem="vpP-OI-nBJ" secondAttribute="leading" id="asC-a5-vPR"/>
+                            <constraint firstItem="HMG-3i-Mt9" firstAttribute="trailing" secondItem="cbY-tS-4Hy" secondAttribute="trailingMargin" id="cd9-KJ-u5M"/>
+                            <constraint firstItem="vpP-OI-nBJ" firstAttribute="trailing" secondItem="thY-LQ-t1u" secondAttribute="trailing" id="gaq-A3-Gyn"/>
+                            <constraint firstItem="41f-Kr-HC4" firstAttribute="top" secondItem="vpP-OI-nBJ" secondAttribute="top" constant="39" id="nZa-EY-9Xl"/>
+                            <constraint firstItem="HMG-3i-Mt9" firstAttribute="leading" secondItem="vpP-OI-nBJ" secondAttribute="leading" constant="16" id="qQR-yM-te4"/>
+                            <constraint firstItem="HMG-3i-Mt9" firstAttribute="top" secondItem="8dL-Fa-yCT" secondAttribute="bottom" constant="8" symbolic="YES" id="yDv-hO-hHm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vpP-OI-nBJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="page2Image" destination="thY-LQ-t1u" id="EUL-fl-WUj"/>
+                        <outlet property="page2Label" destination="HMG-3i-Mt9" id="FNK-2C-TZD"/>
+                        <outlet property="playButton" destination="8dL-Fa-yCT" id="1HH-7g-m0r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tad-py-KiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-147.48201438848923" y="2252.6978417266187"/>
+        </scene>
+        <!--Page3 View Controller-->
+        <scene sceneID="RAY-9m-Rea">
+            <objects>
+                <viewController storyboardIdentifier="Page3ViewController" id="b5U-aI-Km0" customClass="Page3ViewController" customModule="Harper_Rose_Goes_To_The_Beach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0gg-eu-Rjd">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZs-zV-F6E">
+                                <rect key="frame" x="20" y="30" width="50" height="50"/>
+                                <state key="normal" image="home-50"/>
+                                <connections>
+                                    <segue destination="ODm-Ba-nYK" kind="show" id="Ux0-Ro-uNx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page3" translatesAutoresizingMaskIntoConstraints="NO" id="eur-QI-5Wn">
+                                <rect key="frame" x="0.0" y="110" width="834" height="681"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="681" id="AfN-2R-Bai"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="She dreamed of seeing dolphins and listening to the waves roll in. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZU-vn-1E5">
+                                <rect key="frame" x="20" y="827" width="772" height="109"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seR-mV-SfM">
+                                <rect key="frame" x="78" y="30" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="play-50"/>
+                                <connections>
+                                    <action selector="tapToRead:" destination="b5U-aI-Km0" eventType="touchUpInside" id="dbO-we-ud2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8K-tr-0Bn">
+                                <rect key="frame" x="136" y="30" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sound"/>
+                                <connections>
+                                    <action selector="playWaves:" destination="b5U-aI-Km0" eventType="touchUpInside" id="ghv-3C-Aqx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65840041637420654" green="0.81717467308044434" blue="0.85208290815353394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V8v-yw-PM2" firstAttribute="trailing" secondItem="eur-QI-5Wn" secondAttribute="trailing" id="2Js-U4-6Pd"/>
+                            <constraint firstItem="AZU-vn-1E5" firstAttribute="leading" secondItem="TZs-zV-F6E" secondAttribute="leading" id="CGf-mE-47O"/>
+                            <constraint firstItem="V8v-yw-PM2" firstAttribute="trailing" secondItem="AZU-vn-1E5" secondAttribute="trailing" constant="42" id="FQT-dr-UWK"/>
+                            <constraint firstItem="AZU-vn-1E5" firstAttribute="leading" secondItem="0gg-eu-Rjd" secondAttribute="leadingMargin" id="Iy9-sz-xR1"/>
+                            <constraint firstItem="eur-QI-5Wn" firstAttribute="top" secondItem="TZs-zV-F6E" secondAttribute="bottom" constant="30" id="fH2-pq-Uy6"/>
+                            <constraint firstItem="eur-QI-5Wn" firstAttribute="top" secondItem="0gg-eu-Rjd" secondAttribute="top" constant="110" id="gp7-TN-zUt"/>
+                            <constraint firstItem="eur-QI-5Wn" firstAttribute="leading" secondItem="V8v-yw-PM2" secondAttribute="leading" id="non-gw-plx"/>
+                            <constraint firstItem="AZU-vn-1E5" firstAttribute="top" secondItem="eur-QI-5Wn" secondAttribute="bottom" constant="36" id="rgr-NM-ab1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V8v-yw-PM2"/>
+                    </view>
+                    <connections>
+                        <outlet property="page3Image" destination="eur-QI-5Wn" id="FAG-IA-jRS"/>
+                        <outlet property="page3Text" destination="AZU-vn-1E5" id="nFi-0l-bSW"/>
+                        <outlet property="playButton" destination="seR-mV-SfM" id="GqQ-Zd-CGi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E0W-JJ-dHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="2866"/>
+        </scene>
+        <!--Page4 View Controller-->
+        <scene sceneID="Jje-0T-vLX">
+            <objects>
+                <viewController storyboardIdentifier="Page4ViewController" id="Ozk-By-Ixn" customClass="Page4ViewController" customModule="Harper_Rose_Goes_To_The_Beach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="osB-Em-2e0">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLA-Bm-T5h">
+                                <rect key="frame" x="20" y="30" width="50" height="50"/>
+                                <state key="normal" image="home-50"/>
+                                <connections>
+                                    <segue destination="ODm-Ba-nYK" kind="show" id="Bgx-Hu-Hx0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All she wanted was to feel the sand beneath her feet. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQW-I5-rB3">
+                                <rect key="frame" x="20" y="878" width="740.5" height="54.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page4" translatesAutoresizingMaskIntoConstraints="NO" id="DAc-9L-IPy">
+                                <rect key="frame" x="0.0" y="125" width="834" height="687"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="687" id="CdV-6w-ATo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2t-6N-pGQ">
+                                <rect key="frame" x="86" y="30" width="50" height="50"/>
+                                <state key="normal" image="play-50"/>
+                                <connections>
+                                    <action selector="tapToRead:" destination="Ozk-By-Ixn" eventType="touchUpInside" id="kIg-fA-iPi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94498568773269653" green="0.87741440534591675" blue="0.69482558965682983" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="u2t-6N-pGQ" firstAttribute="leading" secondItem="BLA-Bm-T5h" secondAttribute="trailing" constant="16" id="KGs-kU-dBA"/>
+                            <constraint firstItem="BLA-Bm-T5h" firstAttribute="top" secondItem="u2t-6N-pGQ" secondAttribute="top" id="Om4-0h-Iho"/>
+                            <constraint firstItem="BLA-Bm-T5h" firstAttribute="leading" secondItem="osB-Em-2e0" secondAttribute="leadingMargin" id="X4O-5O-6fQ"/>
+                            <constraint firstItem="RjT-Xf-TOH" firstAttribute="trailing" secondItem="DAc-9L-IPy" secondAttribute="trailing" id="cDI-Ee-9Rc"/>
+                            <constraint firstItem="DAc-9L-IPy" firstAttribute="top" secondItem="BLA-Bm-T5h" secondAttribute="bottom" constant="45" id="fGv-pT-KVs"/>
+                            <constraint firstItem="DAc-9L-IPy" firstAttribute="leading" secondItem="RjT-Xf-TOH" secondAttribute="leading" id="g0Z-8t-2Vu"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TQW-I5-rB3" secondAttribute="trailing" constant="20" symbolic="YES" id="gam-Od-kBL"/>
+                            <constraint firstItem="TQW-I5-rB3" firstAttribute="top" secondItem="DAc-9L-IPy" secondAttribute="bottom" constant="66" id="mGk-pb-m4g"/>
+                            <constraint firstItem="DAc-9L-IPy" firstAttribute="top" secondItem="osB-Em-2e0" secondAttribute="top" constant="125" id="sx0-fP-J9j"/>
+                            <constraint firstItem="BLA-Bm-T5h" firstAttribute="leading" secondItem="TQW-I5-rB3" secondAttribute="leading" id="xQc-cM-eMj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RjT-Xf-TOH"/>
+                    </view>
+                    <connections>
+                        <outlet property="page4Image" destination="DAc-9L-IPy" id="2LX-Ye-7LZ"/>
+                        <outlet property="page4Text" destination="TQW-I5-rB3" id="dCs-tm-6E9"/>
+                        <outlet property="playButton" destination="u2t-6N-pGQ" id="8XX-nz-J2R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bhh-wz-Wcd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815" y="2866"/>
+        </scene>
+        <!--Page5 View Controller-->
+        <scene sceneID="2gq-xV-qU2">
+            <objects>
+                <viewController storyboardIdentifier="Page5ViewController" id="dyr-WD-LKN" customClass="Page5ViewController" customModule="Harper_Rose_Goes_To_The_Beach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7FA-Gv-OTU">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUp-D1-dOB">
+                                <rect key="frame" x="20" y="30" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="home-50"/>
+                                <connections>
+                                    <segue destination="ODm-Ba-nYK" kind="show" id="HyL-It-bmK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page5" translatesAutoresizingMaskIntoConstraints="NO" id="mWq-xF-SjN">
+                                <rect key="frame" x="0.0" y="88" width="834" height="783"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="candle1" translatesAutoresizingMaskIntoConstraints="NO" id="SMa-ju-OKr">
+                                <rect key="frame" x="181" y="706" width="49" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UE5-cw-bSK" appends="YES" id="FNa-fq-Qff"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="candle2" translatesAutoresizingMaskIntoConstraints="NO" id="8E1-Fk-KMY">
+                                <rect key="frame" x="262" y="690" width="44" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FYx-9D-2NN" appends="YES" id="6Q3-j5-Ftp"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="candle3" translatesAutoresizingMaskIntoConstraints="NO" id="igy-4o-MIj">
+                                <rect key="frame" x="344" y="706" width="45" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="FyZ-pV-cJk" appends="YES" id="QqC-rl-CBI"/>
+                                </connections>
+                            </imageView>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RzJ-kv-12P">
+                                <rect key="frame" x="363" y="310" width="150" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1h-Eu-4WE">
+                                <rect key="frame" x="85" y="30" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="play-50"/>
+                                <connections>
+                                    <action selector="tapToRead:" destination="dyr-WD-LKN" eventType="touchUpInside" id="YTX-WP-fLT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Just before her birthday one year, her parents surprised her with a trip to the beach in Florida." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3A-qP-kei">
+                                <rect key="frame" x="10" y="909" width="814" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0ss-rW-hAb"/>
+                    </view>
+                    <connections>
+                        <outlet property="cakeTop" destination="RzJ-kv-12P" id="vmx-Se-Doa"/>
+                        <outlet property="candle1" destination="SMa-ju-OKr" id="DfC-7s-43I"/>
+                        <outlet property="candle2" destination="8E1-Fk-KMY" id="jBQ-4x-Rk6"/>
+                        <outlet property="candle3" destination="igy-4o-MIj" id="nay-cB-XUh"/>
+                        <outlet property="gesture1" destination="UE5-cw-bSK" id="deQ-v7-TPg"/>
+                        <outlet property="page5Image" destination="mWq-xF-SjN" id="1Pc-Vt-eBp"/>
+                        <outlet property="page5Text" destination="h3A-qP-kei" id="HKZ-tj-tNI"/>
+                        <outlet property="playButton" destination="c1h-Eu-4WE" id="xfY-xg-E8g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEU-kD-YLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="UE5-cw-bSK">
+                    <connections>
+                        <action selector="moveCandle:" destination="dyr-WD-LKN" id="QUz-Oa-aJd"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="FYx-9D-2NN">
+                    <connections>
+                        <action selector="moveCandle:" destination="dyr-WD-LKN" id="AxO-o7-phy"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="FyZ-pV-cJk">
+                    <connections>
+                        <action selector="moveCandle:" destination="dyr-WD-LKN" id="iX8-Wn-7rW"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2760.4316546762593" y="2252.6978417266187"/>
+        </scene>
+        <!--Page6 View Controller-->
+        <scene sceneID="0FF-om-j29">
+            <objects>
+                <viewController storyboardIdentifier="Page6ViewController" id="jnG-5P-Tmo" customClass="Page6ViewController" customModule="Harper_Rose_Goes_To_The_Beach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pa9-3w-Xda">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlY-1E-yWL">
+                                <rect key="frame" x="20" y="48" width="50" height="50"/>
+                                <state key="normal" image="home-50"/>
+                                <connections>
+                                    <segue destination="ODm-Ba-nYK" kind="show" id="Kai-9t-BSU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MH6-u0-tBm">
+                                <rect key="frame" x="20" y="118" width="785" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="2hb-aN-bFU"/>
+                                </constraints>
+                                <string key="text">It was a glorious trip, and everything she dreamed of! Harper Rose saw dolphins and made sand castles that washed away into the ocean.  </string>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page6" translatesAutoresizingMaskIntoConstraints="NO" id="oJB-eP-ZXe">
+                                <rect key="frame" x="0.0" y="288" width="834" height="724"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="724" id="qBV-WT-WTA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ju2-mT-Tnd">
+                                <rect key="frame" x="78" y="48" width="50" height="50"/>
+                                <state key="normal" image="play-50"/>
+                                <connections>
+                                    <action selector="tapToRead:" destination="jnG-5P-Tmo" eventType="touchUpInside" id="Rpc-Ae-yZ0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72063571214675903" green="0.89394515752792358" blue="0.97613281011581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MH6-u0-tBm" firstAttribute="top" secondItem="UlY-1E-yWL" secondAttribute="bottom" constant="20" id="2yS-7T-NCL"/>
+                            <constraint firstItem="oJB-eP-ZXe" firstAttribute="trailing" secondItem="bdL-Qh-eHV" secondAttribute="trailing" id="95j-iH-mIv"/>
+                            <constraint firstItem="bdL-Qh-eHV" firstAttribute="bottom" secondItem="MH6-u0-tBm" secondAttribute="bottom" constant="816" id="Qtd-N6-2OV"/>
+                            <constraint firstAttribute="trailing" secondItem="MH6-u0-tBm" secondAttribute="trailing" constant="29" id="Wsh-hP-d6I"/>
+                            <constraint firstItem="bdL-Qh-eHV" firstAttribute="bottom" secondItem="oJB-eP-ZXe" secondAttribute="bottom" constant="100" id="b1v-Ro-4Hv"/>
+                            <constraint firstItem="UlY-1E-yWL" firstAttribute="leading" secondItem="pa9-3w-Xda" secondAttribute="leadingMargin" id="eUh-es-g1d"/>
+                            <constraint firstItem="ju2-mT-Tnd" firstAttribute="leading" secondItem="UlY-1E-yWL" secondAttribute="trailing" constant="8" symbolic="YES" id="j3z-Nh-0hL"/>
+                            <constraint firstItem="UlY-1E-yWL" firstAttribute="top" secondItem="ju2-mT-Tnd" secondAttribute="top" id="p0e-a6-0g5"/>
+                            <constraint firstItem="MH6-u0-tBm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UlY-1E-yWL" secondAttribute="leading" id="q9F-EM-iDM"/>
+                            <constraint firstItem="oJB-eP-ZXe" firstAttribute="leading" secondItem="bdL-Qh-eHV" secondAttribute="leading" id="uYH-Pw-Ues"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bdL-Qh-eHV"/>
+                    </view>
+                    <connections>
+                        <outlet property="page6Image" destination="oJB-eP-ZXe" id="ozi-EN-48t"/>
+                        <outlet property="page6Text" destination="MH6-u0-tBm" id="lxw-qY-Zio"/>
+                        <outlet property="playButton" destination="ju2-mT-Tnd" id="1a4-Al-qha"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JBd-NT-oNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3830.9352517985612" y="2252.6978417266187"/>
+        </scene>
+        <!--Page7 View Controller-->
+        <scene sceneID="mM9-jK-80A">
+            <objects>
+                <viewController storyboardIdentifier="Page7ViewController" id="KqX-c0-ThO" customClass="Page7ViewController" customModule="Harper_Rose_Goes_To_The_Beach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7e2-qJ-fLk">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9Z-pc-Rby">
+                                <rect key="frame" x="20" y="41" width="50" height="50"/>
+                                <state key="normal" image="home-50"/>
+                                <connections>
+                                    <segue destination="ODm-Ba-nYK" kind="show" id="k3W-au-n3d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blg-Ig-Jbx">
+                                <rect key="frame" x="16" y="831" width="798" height="237"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="237" id="fyB-Il-Vkf"/>
+                                </constraints>
+                                <string key="text">After returning home. Harper Rose realized she loved both the mountains and the beach. There are so many incredible places on this earth to see, she thought, as she was already dreaming up her next adventure.</string>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page7" translatesAutoresizingMaskIntoConstraints="NO" id="XfQ-lS-Wia">
+                                <rect key="frame" x="0.0" y="99" width="834" height="724"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="724" id="fMr-1S-Z0M"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nj7-fu-Q1D">
+                                <rect key="frame" x="78" y="41" width="50" height="50"/>
+                                <state key="normal" image="play-50"/>
+                                <connections>
+                                    <action selector="tapToRead:" destination="KqX-c0-ThO" eventType="touchUpInside" id="SaH-hv-naB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73067474365234375" green="0.78254729509353638" blue="0.31963872909545898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nj7-fu-Q1D" firstAttribute="leading" secondItem="P9Z-pc-Rby" secondAttribute="trailing" constant="8" symbolic="YES" id="19K-zq-bmW"/>
+                            <constraint firstItem="P9Z-pc-Rby" firstAttribute="top" secondItem="nj7-fu-Q1D" secondAttribute="top" id="5yj-gb-6QC"/>
+                            <constraint firstItem="XfQ-lS-Wia" firstAttribute="leading" secondItem="Hhq-04-WY9" secondAttribute="leading" id="7x2-Sd-90r"/>
+                            <constraint firstItem="P9Z-pc-Rby" firstAttribute="top" secondItem="Hhq-04-WY9" secondAttribute="top" constant="21" id="Btk-jZ-cCI"/>
+                            <constraint firstItem="P9Z-pc-Rby" firstAttribute="leading" secondItem="7e2-qJ-fLk" secondAttribute="leadingMargin" id="IAH-tf-RpJ"/>
+                            <constraint firstItem="blg-Ig-Jbx" firstAttribute="top" secondItem="XfQ-lS-Wia" secondAttribute="bottom" constant="8" symbolic="YES" id="Web-AO-2FC"/>
+                            <constraint firstItem="blg-Ig-Jbx" firstAttribute="trailing" secondItem="7e2-qJ-fLk" secondAttribute="trailingMargin" id="fsO-b1-vIu"/>
+                            <constraint firstItem="blg-Ig-Jbx" firstAttribute="leading" secondItem="Hhq-04-WY9" secondAttribute="leading" constant="16" id="sqe-6r-Roz"/>
+                            <constraint firstItem="XfQ-lS-Wia" firstAttribute="trailing" secondItem="Hhq-04-WY9" secondAttribute="trailing" id="vYP-Ri-Pef"/>
+                            <constraint firstItem="XfQ-lS-Wia" firstAttribute="top" secondItem="P9Z-pc-Rby" secondAttribute="bottom" constant="8" symbolic="YES" id="yuZ-mu-Seh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hhq-04-WY9"/>
+                    </view>
+                    <connections>
+                        <outlet property="page7Image" destination="XfQ-lS-Wia" id="rCx-wl-ysM"/>
+                        <outlet property="page7Text" destination="blg-Ig-Jbx" id="pNx-s4-MlX"/>
+                        <outlet property="playButton" destination="nj7-fu-Q1D" id="Ukp-f2-4Bs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wKt-gq-D33" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3740.2877697841727" y="993.88489208633098"/>
+        </scene>
+        <!--About Page View Controller-->
+        <scene sceneID="lcT-LV-MvL">
+            <objects>
+                <viewController storyboardIdentifier="Info" id="OB7-gq-7xP" customClass="AboutPageViewController" customModule="Harper_Rose_Goes_To_The_Beach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LS4-Dn-p2t">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aA-TH-xf6">
+                                <rect key="frame" x="22" y="56" width="48" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="doneReading:" destination="OB7-gq-7xP" eventType="touchUpInside" id="f48-f2-lhA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About AlexRichards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OI0-jK-J24">
+                                <rect key="frame" x="196" y="323" width="420" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTf-eE-sj3">
+                                <rect key="frame" x="89" y="388" width="635" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Alex Richards is originally from Austin Texas, and currently lives in Chicago Il, where she does not get to see her niece Harper Rose (who the book is based on) nearly enough. This is Alex's first venture into children's books, but with this crittically acclaimed work, it's clear that she will be around in this genre for awhile.</string>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52156862745098043" green="0.7803921568627451" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="n7n-rh-1LZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="3aA-TH-xf6" id="iMB-En-W8E"/>
+                        <outlet property="infoLabel" destination="TTf-eE-sj3" id="kuh-1z-plJ"/>
+                        <outlet property="titleLabel" destination="OI0-jK-J24" id="VAF-u7-NVl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8e-uR-0t2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2894.9640287769785" y="-403.05755395683457"/>
+        </scene>
+        <!--Page8 View Controller-->
+        <scene sceneID="Ltz-YU-W1F">
+            <objects>
+                <viewController storyboardIdentifier="Page8ViewController" id="HMI-TW-Fry" customClass="Page8ViewController" customModule="Harper_Rose_Goes_To_The_Beach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qqi-aa-0RF">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THE END" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cc-Hk-nwH">
+                                <rect key="frame" x="358" y="498" width="176" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeW-S5-KiQ">
+                                <rect key="frame" x="20" y="30" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="home-50"/>
+                                <connections>
+                                    <segue destination="ODm-Ba-nYK" kind="show" id="EnJ-hf-gYN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Harper" translatesAutoresizingMaskIntoConstraints="NO" id="GCi-ZC-Pcl">
+                                <rect key="frame" x="474" y="498" width="340" height="594"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5652876496" green="0.80967020990000005" blue="0.98976856469999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="tO9-Dv-gT9"/>
+                    </view>
+                    <connections>
+                        <outlet property="page8Image" destination="GCi-ZC-Pcl" id="kNC-kK-10B"/>
+                        <outlet property="page8Text" destination="2cc-Hk-nwH" id="1S4-MB-hje"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emf-xJ-GXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3741" y="-259"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r6U-gL-wN7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ODm-Ba-nYK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zFj-ft-ZQc">
+                        <rect key="frame" x="0.0" y="20" width="834" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B1v-is-6tO" kind="relationship" relationship="rootViewController" id="Ad9-iu-hAn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqo-Kq-qRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="208"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Harper" width="94" height="174"/>
+        <image name="Launch" width="337" height="511"/>
+        <image name="candle1" width="87" height="346"/>
+        <image name="candle2" width="92" height="361"/>
+        <image name="candle3" width="88" height="353"/>
+        <image name="home-50" width="50" height="50"/>
+        <image name="mountains" width="653" height="571"/>
+        <image name="page2" width="627" height="569"/>
+        <image name="page3" width="619" height="535"/>
+        <image name="page4" width="706" height="534"/>
+        <image name="page5" width="688" height="572"/>
+        <image name="page6" width="641" height="545"/>
+        <image name="page7" width="666" height="572"/>
+        <image name="play-50" width="50" height="50"/>
+        <image name="sound" width="50" height="50"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qCu-Aw-TuO"/>
+    </inferredMetricsTieBreakers>
+</document>
